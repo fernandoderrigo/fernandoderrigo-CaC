@@ -1,13 +1,16 @@
+/* Reset de estilos */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Estilos generales */
 body {
   font-family: sans-serif;
 }
 
+/* Estilos del encabezado */
 header {
   text-align: center;
   background-color: rgb(255, 255, 255);
@@ -51,6 +54,7 @@ nav ul {
   border-radius: 10px;
 }
 
+/* Estilos de las novedades */
 .titulo2 {
   text-align: center;
   color: rgb(5, 5, 5);
@@ -91,17 +95,10 @@ nav ul {
   align-items: center;
 }
 
-header div {
-  background-color: black;
-  width: 100%;
-}
-
-hr {
-  color: rgb(132, 19, 19);
-}
+/* Estilos del carousel */
 .carousel {
   position: relative;
-  width: 80%;
+  width: 100%;
   max-width: 120em;
   max-height: 53em;
   margin: 7em auto 1em auto;
@@ -109,12 +106,12 @@ hr {
 
 .carousel-container {
   display: inline-block;
-  min-width: 300%;
+  min-width: 100%;
   box-sizing: border-box;
 }
 
 .carousel-items {
-  width: calc(300% / 3);
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-flow: row nowrap;
@@ -125,7 +122,6 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 1em; */
 }
 
 .carousel-container a img {
@@ -160,7 +156,7 @@ hr {
   right: 0em;
 }
 
-/* Pie de página */
+/* Estilos del pie de página */
 footer {
   display: flex;
   justify-content: space-evenly;
@@ -171,4 +167,41 @@ footer {
   margin-top: auto;
   height: 15px;
   margin-bottom: 0;
+}
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+  header {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 250px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .nav-header a {
+    margin: 5px auto;
+  }
+
+  .nuevos {
+    grid-template-columns: 1fr;
+  }
+
+  .novedades img {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .carousel {
+    max-width: 90%;
+    max-height: auto;
+    margin: 3em auto 1em auto;
+  }
 }
