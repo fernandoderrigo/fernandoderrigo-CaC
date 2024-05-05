@@ -8,6 +8,7 @@ body {
   font-family: sans-serif;
 }
 
+/* Inicio Header */
 header {
   text-align: center;
   background-color: rgb(255, 255, 255);
@@ -24,12 +25,7 @@ header section {
 }
 
 .logo {
-  width: 350px;
-}
-
-.banner img {
-  width: 100%;
-  height: 500px;
+  width: 500px;
 }
 
 nav ul {
@@ -51,114 +47,50 @@ nav ul {
   border-radius: 10px;
 }
 
-.titulo2 {
-  text-align: center;
-  color: rgb(5, 5, 5);
-  border-top: 5px solid #ffffff;
-  border-bottom: 5px solid #ffffff;
-  padding: 0.5em;
-  font-style: italic;
-  font-size: x-large;
-}
-
-.nuevos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.novedades img {
-  width: 40%;
-  border-radius: 5%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid black;
-  box-shadow: 5px 5px 5px rgb(5, 5, 5);
-  aspect-ratio: 1/1;
-
-  margin-right: 15px;
-}
-
-.novedades {
-  padding: 1em;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid black;
-  box-shadow: 5px 5px 5px rgba(5, 5, 5, 0.649);
-  margin: 0px 10px 10px;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-header div {
-  background-color: black;
-  width: 100%;
-}
-
-hr {
-  color: rgb(132, 19, 19);
-}
-.carousel {
-  position: relative;
-  width: 80%;
-  max-width: 120em;
-  max-height: 53em;
-  margin: 7em auto 1em auto;
-}
-
+/* Fin Header*/
+/* Inicio Carrousel */
 .carousel-container {
-  display: inline-block;
-  min-width: 300%;
-  box-sizing: border-box;
-}
-
-.carousel-items {
-  width: calc(300% / 3);
-  display: flex;
-  flex-direction: row;
-  flex-flow: row nowrap;
-}
-
-.items {
+  position: relative;
+  overflow: hidden;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* padding: 1em; */
 }
 
-.carousel-container a img {
-  width: 100%;
-  aspect-ratio: 1/1;
-}
-
-.controls {
+.carousel-button {
   position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.prev {
-  height: 100%;
-  position: absolute;
-  background: transparent;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
   border: none;
-  color: rgba(0, 0, 0, 0.507);
-  font-size: 2em;
+  padding: 10px;
   cursor: pointer;
-  left: 0em;
 }
-.next {
-  height: 100%;
-  position: absolute;
-  border: none;
-  color: rgba(0, 0, 0, 0.507);
-  font-size: 2em;
-  cursor: pointer;
-  right: 0em;
+
+.prev-button {
+  left: 0;
 }
+
+.next-button {
+  right: 0;
+}
+
+.carousel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+img {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+/* Fin Carrousel */
 
 /* Pie de página */
 footer {
@@ -171,4 +103,4 @@ footer {
   margin-top: auto;
   height: 15px;
   margin-bottom: 0;
-}/* Pie de página */
+} /* Pie de página */
