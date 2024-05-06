@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chocoarte Delicioso</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/contacto.css" />
+  </head>
+  <body>
+    <header>
+      <!-- shipments -->
+      <div>
+        <h5>ENVÍOS A TODA ZONA ESTE CON TU COMPRA SUPERIOR A $100.000</h5>
+      </div>
+
+      <section>
+        <!-- Title and Logo  -->
+        <section>
+          <img
+            src="../assets/index/logo/logo_claro.png"
+            class="logo"
+            alt="Logo"
+          />
+        </section>
+
+        <!-- Barra de navegación -->
+        <nav class="nav-header">
+          <ul>
+            <li>
+              <a href="../index.html" class="btn btn-link btn-nav show-content"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a
+                href="./productos.html"
+                class="btn btn-link btn-nav show-content"
+                >Nuestros Productos</a
+              >
+            </li>
+            <li>
+              <a
+                href="./sobre_nosotros.html"
+                class="btn btn-link btn-nav show-content"
+                >Sobre nosotros</a
+              >
+            </li>
+            <li>
+              <a
+                href="./contacto.html"
+                class="btn btn-link btn-nav show-content"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main class="mincontact">
+      <!--Formulario de contacto-->
+      <div class="container">
+        <h2>Formulario de Contacto</h2>
+        <form
+          action="mailto:tucorreo@tudominio.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" name="apellido" required />
+
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="referencia">¿Cómo se enteró de nosotros?</label>
+          <select id="referencia" name="referencia">
+            <option value="Redes Sociales">Redes Sociales</option>
+            <option value="Búsqueda en Internet">Búsqueda en Internet</option>
+            <option value="Recomendación de un amigo">
+              Recomendación de un amigo
+            </option>
+            <option value="Otro">Otro</option>
+          </select>
+
+          <label for="comentarios">Consulta o comentario:</label>
+          <textarea
+            id="comentarios"
+            name="comentarios"
+            placeholder="Ingrese su consulta o comentario"
+          ></textarea>
+
+          <div class="buttons">
+            <input type="submit" value="Enviar" id="enviar" />
+            <button type="reset">Borrar</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+      <p>Derechos de autor © 2023 Fer :D</p>
+    </footer>
+
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

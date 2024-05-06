@@ -1,0 +1,210 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #d6bc75;
+  background-color: #060606 !important;
+}
+
+header {
+  background-color: #d6bc75;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center; /* Alinea contenido a la derecha */
+}
+.logo img {
+  width: 150px; /*tamaño de logo*/
+  height: auto;
+  margin-right: 20px;
+}
+header h1 {
+  margin: 0;
+}
+
+nav {
+  margin-left: auto; /*mueve menu de navegacion a la derecha */
+}
+
+nav ul {
+  list-style-type: none; /*se establece ningun marcador*/
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #e6d39f;
+  text-decoration: none;
+}
+
+h2 {
+  color: #c99383 !important;
+  text-align: center;
+  font-family: "Gloock", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.main-content {
+  flex-grow: 1; /* Hace que el contenido ppal.crezca para ocupar todo el espacio */
+  padding: 20px 0px 0px 0px;
+}
+
+.fila {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #e6d39f;
+}
+
+.columna {
+  width: 50%;
+}
+
+.columnaImagen {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.columna p {
+  text-align: justify;
+}
+
+.imagen {
+  width: 75%;
+}
+
+.pb-12 {
+  padding-bottom: 12px;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+
+.pr-60 {
+  padding-right: 60px;
+}
+
+.pl-60 {
+  padding-left: 60px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+
+footer {
+  background-color: #d6bc75;
+  color: white;
+  text-align: center;
+  height: 70px; /* Altura del footer */
+  display: flex;
+  justify-content: center; /* Centra horizontal */
+  align-items: center; /* Centra vertivalmente */
+}
+
+footer p {
+  font-size: 20px; /* Ajusta tamaño de la letra */
+  margin: 0%;
+}
+
+/* Consultas de medios para dispositivos móviles */
+@media (max-width: 767px) {
+  body {
+    padding: 10px;
+  }
+  .pr-60 {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .pl-60 {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .fila.pb-60 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .fila {
+    flex-direction: column;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  nav ul li {
+    margin-right: 10px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .columna,
+  .columnaImagen {
+    width: 100%;
+  }
+
+  .imagen {
+    width: 100%;
+  }
+
+  .columnaImagen {
+    order: 1; /* Cambia el orden de la imagen para que esté arriba */
+  }
+
+  .columna {
+    order: 2; /* Cambia el orden del texto para que esté abajo */
+  }
+}
+
+/* Consultas de medios para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .logo img {
+    width: 120px;
+  }
+
+  header {
+    padding: 15px;
+  }
+
+  nav ul li {
+    margin-right: 15px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+}
+
+/* Consultas de medios para laptops */
+@media (min-width: 1024px) {
+  .logo img {
+    width: 150px;
+  }
+
+  header {
+    padding: 20px;
+  }
+
+  nav ul li {
+    margin-right: 20px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+}
