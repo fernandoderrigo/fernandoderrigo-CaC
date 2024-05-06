@@ -69,3 +69,11 @@ button:hover {
         border-radius: 0;
     }
 }
+.asterisco {
+    color: red;
+}
+#texto_asterisco {
+    font-size: 0.6rem;
+    padding-top: 3%;
+    text-align: left;
+}

@@ -44,13 +44,13 @@
         <div class="container">
             <h2>Formulario de Contacto</h2>
             <form action="mailto:tucorreo@tudominio.com" method="post" enctype="text/plain">
-                <label for="nombre">Nombre:</label>
+                <label for="nombre">Nombre <span class="asterisco">*</span></label>
                 <input type="text" id="nombre" name="nombre" required>
         
-                <label for="apellido">Apellido:</label>
+                <label for="apellido">Apellido <span class="asterisco">*</span></label>
                 <input type="text" id="apellido" name="apellido" required>
         
-                <label for="email">Correo Electrónico:</label>
+                <label for="email">Correo Electrónico <span class="asterisco">*</span></label>
                 <input type="email" id="email" name="email" required>
         
                 <label for="referencia">¿Cómo se enteró de nosotros?</label>
@@ -61,8 +61,10 @@
                     <option value="Otro">Otro</option>
                 </select>
         
-                <label for="comentarios">Consulta o comentario:</label>
+                <label for="comentarios">Consulta o comentario</label>
                 <textarea id="comentarios" name="comentarios" placeholder="Ingrese su consulta o comentario" ></textarea>
+
+                <p id="texto_asterisco">Los campos con <span class="asterisco">*</span> son obligatorios</p>
         
                 <div class="buttons">
                     <input type="submit" value="Enviar" id="enviar">
