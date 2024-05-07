@@ -8,7 +8,7 @@
     font-weight: 100;   
     top: 50%;
     left: 50%;
-    background-color: bisque;
+    background-color: #c99383;
     text-align: center;
 }
 
@@ -16,7 +16,7 @@ div .container{
    
     width: 100%;
     height: 100%;
-   background-color: antiquewhite;
+   background-color: #e6d39f;
     margin-top: 0px;
     display: flex;
 
@@ -25,7 +25,7 @@ div .container{
 .nuestros-productos{
     width: 100%;
     height: 100%;
-    background-color: antiquewhite;
+    background-color: #e6d39f;
 
 }
 
@@ -51,14 +51,6 @@ div .carousel-inner{
     
     margin: auto;
     
-}
-
-#carouselExample{
-    padding: auto;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(196, 121, 30);
-    margin: auto;
 }
 
 div .carousel-item img{
