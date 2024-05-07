@@ -1,37 +1,34 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const BotonIz = document.querySelector(".prev");
-  const BotonDe = document.querySelector(".next");
-  const imagenes = document.querySelector(".carousel-items");
-  
-  function actualizarTransformacion() {
-    const desplazamiento = -indiceActual * 100/12; // Desplazamiento en porcentaje
-    imagenes.style.transform = `translateX(${desplazamiento}%)`;
-  }
-  
-  function actualizarTransformacionDerecha() { // Desplazamiento en porcentaje
-    imagenes.style.transform = `translateX(${0}%)`;
-  }
+document.addEventListener("DOMContentLoaded", ()=>{
+  const carruselItems = document.querySelector(".carrusel_items")
+  const items = document.querySelectorAll(".item")
+  const prevButton = document.querySelector(".prev_button")
+  const nextButton = document.querySelector(".next_button");
+  const itemsLength = items.length
+  // Como iniciamos en los bombones lo puse en 6 para que tome como indice eso
+  let i = 6
+  console.log(i)
 
-  let indiceActual = 0
-  const cantidadImagenes = imagenes.querySelectorAll(".items").length ;
-  BotonIz.addEventListener("click", () =>{
-    if(indiceActual > 0){
-      console.log(indiceActual)
-      indiceActual--;
-    }else {
-      console.log(indiceActual)
-      indiceActual = cantidadImagenes - 1; // Ir a la última imagen si estamos en la primera
-    };
-    actualizarTransformacion();
-
-  });
-  BotonDe.addEventListener("click", () =>{
-    if(indiceActual < cantidadImagenes - 1){
-      indiceActual++;
-      console.log(indiceActual)
-    } else {
-      return actualizarTransformacionDerecha(); // Volver al inicio si estamos en la última imagen
-    }
-    actualizarTransformacion();
-  });
-});
+  prevButton.addEventListener("click", ()=>{
+      const desplazamiento = i *( 100/itemsLength)
+      if(i > 0){
+          i--;
+      }else  {
+          // Esto te envia a la imagen 12
+          i = itemsLength - 13
+      } 
+      carruselItems.style.transform = `translateX( -${desplazamiento}%)`;
+  })
+  
+  nextButton.addEventListener("click", ()=>{
+      const desplazamiento = -i *( 100/itemsLength)
+      if(i < itemsLength - 6){
+          i++;
+          console.log(i)
+          console.log(desplazamiento)
+      }else  {
+          // Esto te envia a la imagen 7
+          i = 7
+      }
+      carruselItems.style.transform = `translateX( ${desplazamiento}%)`;
+  })
+})
