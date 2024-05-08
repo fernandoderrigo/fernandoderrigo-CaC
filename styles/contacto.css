@@ -11,6 +11,7 @@
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: white;
 }
 
 input[type="text"],
@@ -32,9 +33,13 @@ textarea {
 .buttons {
     margin-top: 20px;
 }
-h2{
+#h2form{
     padding-top: 2%;
     padding-bottom: 2%;
+    background-image: none;
+    color: black;
+    font-weight: normal;
+    text-shadow: none;
 }
 input[type="submit"],
 button {
