@@ -63,6 +63,7 @@
         <!--Formulario de contacto-->
         <div class="container">
             <h2 id="h2form">Formulario de Contacto</h2>
+            <div class="line"></div>
             <form action="mailto:tucorreo@tudominio.com" method="post" enctype="text/plain">
                 <label for="nombre">Nombre <span class="asterisco">*</span></label>
                 <input type="text" id="nombre" name="nombre" required>
@@ -82,7 +83,7 @@
                 </select>
         
                 <label for="comentarios">Consulta o comentario</label>
-                <textarea id="comentarios" name="comentarios" placeholder="Ingrese su consulta o comentario" ></textarea>
+                <textarea id="comentarios" name="comentarios" placeholder="Ingrese su consulta o comentario..." maxlength="1000"></textarea>
 
                 <p id="texto_asterisco">Los campos con <span class="asterisco">*</span> son obligatorios</p>
         
