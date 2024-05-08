@@ -6,43 +6,8 @@ body {
     background-color: #060606 !important;
   }
   
-  header {
-    background-color: #d6bc75;
-    color: white;
-    padding: 20px;
-    display: flex;
-    align-items: center; /* Alinea contenido a la derecha */
-  }
-  .logo img{
-    width: 150px; /*tamaño de logo*/
-    height: auto;
-    margin-right: 20px;
-  }
-  header h1 {
-    margin: 0;
-  }
-
-  nav {
-    margin-left: auto; /*mueve menu de navegacion a la derecha */
-  }
-  
-  nav ul {
-    list-style-type: none; /*se establece ningun marcador*/
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: #e6d39f;
-    text-decoration: none;
-  }
-  
   h2 {
-    color: #c99383 !important;
+    color: #fff !important;
     text-align: center;
     font-family: "Gloock", serif;
     font-weight: 900;
