@@ -9,9 +9,11 @@
 /* Inicio Estilos del Cuerpo */
 body {
   font-family: sans-serif;
-  height: 100vh;
+  height: 100svh;
   margin-top: 20px;
   background-color: rgb(233, 216, 196);
+  overflow-x: hidden; 
+  
 }
 /* Fin Estilos del Cuerpo */
 
@@ -25,6 +27,8 @@ header {
   flex-direction: column;
   width: 100%;
   height: 15%;
+  margin: 0%;
+  
 }
 /* Fin Header */
 
