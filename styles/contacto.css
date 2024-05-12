@@ -43,6 +43,7 @@ textarea {
     font-weight: normal;
     text-shadow: none;
     text-transform: none;
+    background-color: white;
 }
 input[type="submit"],
 button {
