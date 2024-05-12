@@ -64,21 +64,6 @@ body {
     padding-bottom: 60px;
   }
 
-  footer {
-    background-color: #d6bc75;
-    color:white;
-    text-align: center;
-    height: 70px; /* Altura del footer */
-    display: flex;
-    justify-content: center; /* Centra horizontal */
-    align-items: center; /* Centra vertivalmente */
-  }
-
-  footer p {
-    font-size: 20px; /* Ajusta tamaño de la letra */
-    margin: 0%;
-  } 
-  
 /* Consultas de medios para dispositivos móviles */
 @media (max-width: 767px) {
   body {
@@ -99,16 +84,8 @@ body {
     flex-direction: column-reverse;
   }
   
-  .logo {
-      width: 100px;
-  }
-
   .fila {
     flex-direction: column ;
-  }
-
-  header {
-      padding: 10px;
   }
 
   h2 {
@@ -131,24 +108,18 @@ body {
   .columna {
     order: 2; /* Cambia el orden del texto para que esté abajo */
   }
-  footer p {
-    font-size: 9px;
-  }
 }
+    h2 {
+      font-size: 28px;
+  }
+
+
+    h2 {
+      font-size: 32px;
+  }
 
 /* Consultas de medios para tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .logo img {
-      width: 120px;
-  }
-
-  header {
-      padding: 15px;
-  }
-
-  nav ul li {
-      margin-right: 15px;
-  }
+@media (min-width: 768px) and (max-width: 1023px) { 
 
   h2 {
       font-size: 28px;
@@ -157,13 +128,6 @@ body {
 
 /* Consultas de medios para laptops */
 @media (min-width: 1024px) {
-  .logo  {
-      width: 125px;
-  }
-
-  header {
-      padding: 20px;
-  }
 
   h5 {
     position: fixed;
@@ -172,10 +136,30 @@ body {
   h2 {
       font-size: 32px;
   }
-
-
 }
+/* Inicio Estilos Generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Fin Estilos Generales */
 
+/* Inicio Estilos del Cuerpo */
+body {
+  font-family: sans-serif;
+  height: 100svh;
+  margin-top: 20px;
+  background-color: rgb(233, 216, 196);
+  overflow-x: hidden; 
+  
+}
+#parrafo_sn{
+color: black;
+font-size: large;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+line-height: 1.5;
+}
 
 
 
