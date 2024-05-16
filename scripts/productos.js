@@ -1,26 +1,37 @@
-//carga datos externos
-const datos = function () {
-  //let contenido = document.querySelector(".nuestros-productos");
-  fetch("./assets/Productos/productos.json")
-    .then((response) => response.json())
-    .then((data) => console.log(data))
-    .catch((error) => console.log(error));
+// const datos = async () =>
+//   await fetch("../assets/Productos/bombones.json")
+//     .then((response) => {
+//       return response.json();
+//     })
+//     .then((data) => {
+//       console.log(data);
+//       data.bombones.forEach((element) => {
+//         console.log(element);
+//       });
+//     });
+
+// // Cargar Bombones
+// console.log(datos);
+const datos = async () => {
+  try {
+    const response = await fetch("../assets/Productos/bombones.json");
+    const data = await response.json();
+
+    // Supongamos que tienes una lista en tu HTML con el ID "lista-bombones"
+    const listaBombones = document.querySelector(".nuestros-productos");
+
+    data.bombones.forEach((element) => {
+      const li = document.createElement("div");
+      li.textContent = element.nombre;
+      listaBombones.appendChild(li);
+      const imagen = document.createElement("img");
+      imagen.src = element.img;
+      li.appendChild(imagen);
+    });
+  } catch (error) {
+    console.error("Error al cargar los datos:", error);
+  }
 };
-console.log(datos());
-//cargarProductos(contenido, data))
-//creacion y carga html
-// function cargarProductos(contenido, data) {
-//   for (let d of data) {
-//     let producto = document.createElement("div");
-//     let titulo = document.createElement("h2");
-//     titulo.innerHTML = d.nombre;
-//     let imagen = document.createElement("div");
-//     for (let i of d.img) {
-//       let img = document.createElement("img");
-//       img.src = i;
-//       imagen.appendChild(img);
-//     }
-//     producto.append(titulo, imagen);
-//     contenido.appendChild(producto);
-//   }
-// }
+
+// Llama a la función para cargar los datos
+datos();
