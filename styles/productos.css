@@ -119,14 +119,37 @@
     margin-bottom: 10px;
 }
 
-div .container{
-   
-    width: 100%;
-    height: 100%;
-    background-color: rgb(233, 216, 196);
-    margin-top: 0px;
-    display: flex;
+.lista{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 
+}
+
+.tipo{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  border: #000000 solid 1px;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  margin: 10px;
+  color: #000000;
+  font-weight: bold;
+  background-color: #d6bc75;
+  text-align: center;
+  
+}
+a{
+  text-decoration: none;
+  color: #000;
 }
 
 .nuestros-productos{
@@ -136,47 +159,35 @@ div .container{
 
 }
 
-
-
-.productos-carrusel{
-    margin: auto;
-    display: flex;
-    width: 100%;
-    height: 100%;
-
+.tipo-producto{
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #0c0c0c;
+  text-transform: uppercase;
+  padding: 2px 0px;
+  background-color: #000;
+  font-size: 150%;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.dropdown-menu{
+  background-color: #000;
 }
 
-div .carousel-inner{
-    padding: auto;
-    width: 100%;
-    height: 100%;
-    
-    margin: auto;
-    
-}
-
-div .carousel-item img{
-    width: 300px;
-    height: 300px;
-    object-fit:contain;
-    transition: transform 0.3s ease-out;
-}
-
-div .carousel-item img:hover{
-    transform: scale(1.5);
-}  
-
-.agregarCarrito{
-    background-color: rgb(250, 5, 5);
-    color: #ffffff;
-    border-radius: 10px;
-    padding: auto;
-}
-.card{
-  margin: 20px;
-  display: inline-flex;
+/* Inicio Tarjetas */
+.card {
   width: 100%;
-  height: 100%;
+  height: auto;
+  margin: 0.5%;
+  background-color: rgba(216, 198, 175, 0.494);
+  display: inline-block;
+  flex-direction: column;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  
 }
 
 .card-title{
@@ -193,3 +204,84 @@ div .carousel-item img:hover{
   margin: auto;
   display: block;
 }
+
+.card-img-top{
+  object-fit: cover;
+  width: 70%;
+  aspect-ratio: 1;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.978);
+  border-radius: 15px;
+  margin: auto;  
+  display: block;
+}
+
+.card-img-top:hover{
+  transform: scale(1.2);
+}
+
+.card-text{
+  text-align: center;
+  font-size: 1.5rem;
+ 
+}
+
+/* Inicio Pie de página */
+footer {
+  background-image: url("../assets/index/Carrousel/banner.jpg");
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-shadow: 4px 2px 15px #000000;
+  height: 15px;
+}
+/* Fin Pie de página */
+
+/* Inicio Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+  }
+
+  .logo {
+    width: 200px;
+    margin-bottom: 60px;
+    margin-top: 70px;
+    text-align: left;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .nav-header a {
+    display: inline-block;
+    padding: 5px 5px;
+    font-size: 0.4rem;
+  }
+
+  .nuestros_productos {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  header h5 {
+    font-size: 0.9rem;
+    margin-top: 0;
+  }
+}
+/* Fin Estilos para pantallas pequeñas */
