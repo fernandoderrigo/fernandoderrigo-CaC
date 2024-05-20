@@ -18,6 +18,7 @@ const cargarProductos = async (rutaJson, tipoProducto) => {
       contenedor.setAttribute("style", "width: 18rem;");
       const imagen = document.createElement("img");
       imagen.setAttribute("class", "card-img-top");
+      imagen.setAttribute("alt", element.nombre);
       imagen.src = element.img;
       contenedor.appendChild(imagen);
       const prodCarousel = document.createElement("div");
@@ -35,6 +36,12 @@ const cargarProductos = async (rutaJson, tipoProducto) => {
       const carrito = document.createElement("button");
       carrito.setAttribute("class", "btn btn-primary");
       carrito.textContent = "Añadir al carrito";
+      let imagenCarrito = document.createElement("img");
+      imagenCarrito.setAttribute("class", "carrito");
+      imagenCarrito.setAttribute("alt", "Añadir al carrito");
+      imagenCarrito.src =
+        "../assets/productos/MaterialSymbolsAddShoppingCart.png";
+      carrito.appendChild(imagenCarrito);
       prodCarousel.appendChild(carrito);
     });
   } catch (error) {
