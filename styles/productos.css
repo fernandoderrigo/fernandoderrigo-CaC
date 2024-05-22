@@ -89,6 +89,7 @@ nav ul {
   transition: background-color 0.5s, color 0.5s;
   border-radius: 15px;
   font-weight: bold;
+  justify-content:flex-end;
 }
 
 .nav-header a:hover {
@@ -127,6 +128,8 @@ h2,
   font-weight: bold;
   text-align: center;
   margin-bottom: 10px;
+  
+  
 }
 
 .lista {
@@ -167,6 +170,11 @@ a {
   width: 100%;
   height: 100%;
   background-color: rgb(233, 216, 196);
+  justify-content: space-around;
+  
+  display: flex;
+  flex-wrap: wrap;
+  
 
 }
 
@@ -211,12 +219,14 @@ a {
   font-size: 20px;
 }
 
-.btn {
+.btn-carrito {
   color: #ffffff;
   border-radius: 10px;
   padding: auto;
   margin: auto;
   display: block;
+  background-color: #c99383;
+  border:#c99383 1px solid;
 }
 
 .carrito {
@@ -224,7 +234,7 @@ a {
   height: 20px;
   margin: auto;
   display: block;
-  color: #ffffff;
+  
 }
 
 .card-img-top {
@@ -245,6 +255,88 @@ a {
   text-align: center;
   font-size: 1.5rem;
 
+}
+
+/* Fin Tarjetas */
+
+/*carrito flotante*/
+
+#carrito-flotante {
+  position: sticky;
+  top: 20px;
+  right: 20px;
+  width: 300px;
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+#carrito-flotante h2 {
+  margin-top: 0;
+}
+
+#carrito-flotante ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#carrito-flotante li {
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+}
+
+#carrito-flotante button {
+  margin-left: 10px;
+  background-color: rgba(194, 61, 21, 0.291);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#carrito-flotante.hidden {
+  display: none;
+}
+
+#toggle-carrito {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  
+  height: 50px;
+  margin: 10px;
+}
+/* Fin carrito flotante */
+
+/* Estilos para el mensaje emergente (toast) */
+#toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 300px;
+  z-index: 1100;
+}
+
+.toast {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.toast.show {
+  opacity: 1;
 }
 
 /* Inicio Pie de página */
