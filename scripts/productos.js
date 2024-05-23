@@ -40,7 +40,7 @@ const cargarProductos = async (rutaJson, tipoProducto) => {
       imagenCarrito.setAttribute("class", "carrito");
       imagenCarrito.setAttribute("alt", "Añadir al carrito");
       imagenCarrito.src =
-        "../assets/productos/MaterialSymbolsAddShoppingCart.png";
+        "../assets/Productos/MaterialSymbolsAddShoppingCart.png";
       carrito.appendChild(imagenCarrito);
       prodCarousel.appendChild(carrito);
 

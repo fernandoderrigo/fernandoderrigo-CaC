@@ -65,7 +65,7 @@ nav ul {
   justify-content: center;
   align-items: center;
   list-style: none;
-  margin-right: 50%;
+  margin-right: 25%;
 }
 /* Fin Navegación */
 
@@ -275,3 +275,28 @@ footer {
   }
 }
 /* Fin Estilos para pantallas pequeñas */
+@media (min-width: 928px) and (max-width: 1152px) {
+
+
+  img.logo {
+    width: 75%;
+
+  }
+
+
+}
+@media (min-width: 769px) and (max-width: 927px) {
+header section{
+  display:flex;
+align-items: center;
+
+}
+  img.logo {
+    width: 75%;
+
+  }
+
+
+}
+
+

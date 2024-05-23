@@ -96,3 +96,10 @@ button:hover {
     max-height: 300px; /* Altura máxima */
     width: 100%; /* Ancho del textarea */
 }
+.radio {
+    margin-top: 1%;
+}
+#si , #no{
+    display: inline-block;
+    margin:2% 2% 2% 4%;
+}
