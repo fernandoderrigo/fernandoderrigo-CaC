@@ -9,9 +9,10 @@
 /* Inicio Estilos del Cuerpo */
 body {
   font-family: sans-serif;
-  height: 100vh;
+  height: 100svh;
   margin-top: 20px;
   background-color: rgb(233, 216, 196);
+  overflow-x: hidden;
 }
 /* Fin Estilos del Cuerpo */
 
@@ -24,7 +25,8 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 15%;
+  height: 17%;
+  margin: 0%;
 }
 /* Fin Header */
 
@@ -53,7 +55,7 @@ header section {
 
 /* Inicio Logo */
 .logo {
-  width: 450px;
+  width: 100%;
 }
 /* Fin Logo */
 
@@ -63,7 +65,7 @@ nav ul {
   justify-content: center;
   align-items: center;
   list-style: none;
-  margin-right: 50%;
+  margin-right: 25%;
 }
 /* Fin Navegación */
 
@@ -92,7 +94,7 @@ h2,
   text-shadow: 2px 2px 4px #0c0c0c;
   text-transform: uppercase;
   padding: 2px 0px;
-  background-image: url("../assets/index/Carrousel/banner.jpg");
+  background-color: #d0ad4f;
   font-size: 24px;
   font-family: Arial, sans-serif;
   font-style: normal;
@@ -143,12 +145,12 @@ h2,
   width: 50px;
   height: 50px;
   font-size: 50px;
-  color: rgba(255, 0, 0, 0.241);
+  color: rgba(255, 255, 255, 0.998);
   transition: transform 0.3s;
 }
 
 .buttons button:hover {
-  color: rgba(255, 0, 0, 0.73);
+  color: rgba(0, 0, 0, 0.993);
   transform: scale(1.2);
 }
 
@@ -273,3 +275,26 @@ footer {
   }
 }
 /* Fin Estilos para pantallas pequeñas */
+@media (min-width: 928px) and (max-width: 1152px) {
+
+
+  img.logo {
+    width: 75%;
+
+  }
+
+
+}
+@media (min-width: 769px) and (max-width: 927px) {
+header section{
+  display:flex;
+align-items: center;
+
+}
+  img.logo {
+    width: 75%;
+
+  }
+
+
+}
