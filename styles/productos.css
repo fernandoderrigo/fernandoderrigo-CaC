@@ -1,177 +1,422 @@
-
-body {
-  font-family: Arial, sans-serif;
+/* Inicio Estilos Generales */
+* {
   margin: 0;
-  color: #d6bc75;
-  background-color: #060606 !important;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h2 {
-  color: #fff !important;
+/* Fin Estilos Generales */
+
+/* Inicio Estilos del Cuerpo */
+body {
+  font-family: sans-serif;
+  height: 100svh;
+  margin-top: 20px;
+  background-color: #d6bc75;
+  overflow-x: hidden;
+
+}
+
+/* Fin Estilos del Cuerpo */
+
+/* Inicio Header */
+header {
   text-align: center;
-  font-family: "Gloock", serif;
-  font-weight: 900;
-  font-style: normal;
-}
-    
-.main-content {
-  flex-grow: 1; /* Hace que el contenido ppal.crezca para ocupar todo el espacio */
-  padding: 20px 0px 0px 0px;
+  background-color: rgb(17, 17, 17);
+  color: white;
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 15%;
+  margin: 0%;
+
 }
 
-.fila {
+/* Fin Header */
+
+/* Inicio Título Header */
+header h5 {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  background-color: rgb(252, 0, 0);
+  color: white;
+  text-align: center;
+  padding: 0.01% 0;
+  margin: 0;
+  z-index: 999;
+}
+
+/* Fin Título Header */
+
+/* Inicio Sección Header */
+header section {
   display: flex;
   align-items: center;
-  background-color: #e6d39f;
+  justify-content: space-between;
 }
 
-.columna {
-  width: 50%;
+/* Fin Sección Header */
+
+/* Inicio Logo */
+.logo {
+  width: 450px;
 }
 
-.columnaImagen {
-  width: 50%;
+/* Fin Logo */
+
+/* Inicio Navegación */
+nav ul {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-right: 50%;
+}
+
+/* Fin Navegación */
+
+/* Inicio Enlaces de Navegación */
+.nav-header a {
+  background-color: rgba(238, 183, 166, 0.291);
+  color: #bcb8b8;
+  margin: 0 5px;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 15px 25px;
+  transition: background-color 0.5s, color 0.5s;
+  border-radius: 15px;
+  font-weight: bold;
+  justify-content: flex-end;
+}
+
+.nav-header a:hover {
+  background-color: rgb(250, 5, 5);
+  color: #ffffff;
+}
+
+/* Fin Enlaces de Navegación */
+
+/* Inicio Estilos de Texto */
+h2,
+.nuestros_productos_titulo {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #0c0c0c;
+  text-transform: uppercase;
+  padding: 2px 0px;
+  background-image: url("../assets/index/Carrousel/banner.jpg");
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+}
+
+/* Fin Estilos de Texto */
+.titulo2 {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #0c0c0c;
+  text-transform: uppercase;
+  padding: 2px 0px;
+  background-image: url("../assets/index/Carrousel/banner.jpg");
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+
+
+}
+
+.lista {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+
+}
+
+.tipo {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  border: #000000 solid 1px;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  margin: 10px;
+  color: #000000;
+  font-weight: bold;
+  background-color: #d6bc75;
+  text-align: center;
+
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nuestros-productos {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(233, 216, 196);
+  justify-content: space-around;
+
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
+
+.tipo-producto {
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #0c0c0c;
+  text-transform: uppercase;
+  padding: 2rem;
+  background-image: url("../assets/index/Carrousel/banner.jpg");
+  font-size: 150%;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.dropdown-menu {
+  background-color: #000;
+}
+
+/* Inicio Tarjetas */
+.card {
+  width: 100%;
+  height: auto;
+  margin: 0.5%;
+  background-color: rgba(216, 198, 175, 0.494);
+  display: inline-block;
+  flex-direction: column;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+
+}
+
+.card-title {
+  text-align: center;
+  font-weight: bold;
+
+  font-size: 20px;
+}
+
+.btn-carrito {
+  color: #ffffff;
+  border-radius: 10px;
+  padding: auto;
+  margin: auto;
+  display: block;
+  background-color: #c99383;
+  border: #c99383 1px solid;
+}
+
+.carrito {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  display: block;
+
+}
+
+.card-img-top {
+  object-fit: cover;
+  width: 70%;
+  aspect-ratio: 1;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.978);
+  border-radius: 15px;
+  margin: auto;
+  display: block;
+}
+
+.card-img-top:hover {
+  transform: scale(1.2);
+}
+
+.card-text {
+  text-align: center;
+  font-size: 1.5rem;
+
+}
+
+/* Fin Tarjetas */
+
+/*carrito flotante*/
+
+#carrito-flotante {
+  position: fixed;
+  margin-right: auto;
+  margin-left: auto;
+
+  right: 20px;
+  width: auto;
+  padding: 15px;
+  background-color: rgb(180, 134, 134);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#carrito-flotante h4 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 30px;
+}
+
+#carrito-flotante ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#carrito-flotante li {
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+}
+
+#carrito-flotante button {
+  margin-left: 10px;
+  background-color: rgba(194, 61, 21, 0.291);
+  border: none;
+  padding: 5px 10px;
+
+
+}
+
+.total {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: auto;
+}
+
+#carrito-flotante.hidden {
+  display: none;
+}
+
+#toggle-carrito {
+  position: fixed;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  right: 20px;
+  width: auto;
+  z-index: 1000;
+  text-align: center;
+}
+
+/* Fin carrito flotante */
+
+/* Estilos para el mensaje emergente (toast) */
+#toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 300px;
+  z-index: 1100;
+
   justify-content: center;
 }
 
-.columna p {
-  text-align: justify;
+.toast {
+  background-color: #333333;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
-.imagen {
-  width: 75%;
+.toast.show {
+  opacity: 1;
 }
 
-.pb-12 {
-  padding-bottom: 12px;
-}
-
-.pt-60 {
-  padding-top: 60px;
-}
-
-.pr-60 {
-  padding-right: 60px;
-}
-
-.pl-60 {
-  padding-left: 60px;
-}
-
-.pb-60 {
-  padding-bottom: 60px;
-}
-
+/* Inicio Pie de página */
 footer {
-  background-color: #d6bc75;
-  color:white;
-  text-align: center;
-  height: 70px; /* Altura del footer */
+  background-image: url("../assets/index/Carrousel/banner.jpg");
+  bottom: 0;
+  left: 0;
+  width: 100%;
   display: flex;
-  justify-content: center; /* Centra horizontal */
-  align-items: center; /* Centra vertivalmente */
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-shadow: 4px 2px 15px #000000;
+  height: 15px;
 }
 
-footer p {
-  font-size: 20px; /* Ajusta tamaño de la letra */
-  margin: 0%;
-} 
+/* Fin Pie de página */
 
-/* Consultas de medios para dispositivos móviles */
-@media (max-width: 767px) {
-body {
-    padding: 10px;
-}
-.pr-60 {
-  padding-right: 30px;
-  padding-left: 30px;
-}
+/* Inicio Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+  }
 
-.pl-60 {
-  padding-right: 30px;
-  padding-left: 30px;
-}
+  .logo {
+    width: 200px;
+    margin-bottom: 60px;
+    margin-top: 70px;
+    text-align: left;
+  }
 
-.fila.pb-60 {
-  display: flex;
-  flex-direction: column-reverse;
-}
+  nav {
+    text-align: center;
+  }
 
-.logo {
-    width: 100px;
-}
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
 
-.fila {
-  flex-direction: column ;
-}
+  .nav-header a {
+    display: inline-block;
+    padding: 5px 5px;
+    font-size: 0.4rem;
+  }
 
-header {
-    padding: 10px;
-}
+  .nuestros_productos {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
 
-h2 {
-    font-size: 24px;
-}
-
-.columna,
-.columnaImagen {
-    width: 100%;
-}
-
-.imagen {
-    width: 100%;
+  header h5 {
+    font-size: 0.9rem;
+    margin-top: 0;
+  }
 }
 
-.columnaImagen {
-  order: 1; /* Cambia el orden de la imagen para que esté arriba */
-}
-
-.columna {
-  order: 2; /* Cambia el orden del texto para que esté abajo */
-}
-footer p {
-  font-size: 9px;
-}
-}
-
-/* Consultas de medios para tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
-.logo img {
-    width: 120px;
-}
-
-header {
-    padding: 15px;
-}
-
-nav ul li {
-    margin-right: 15px;
-}
-
-h2 {
-    font-size: 28px;
-}
-}
-
-/* Consultas de medios para laptops */
-@media (min-width: 1024px) {
-.logo  {
-    width: 125px;
-}
-
-header {
-    padding: 20px;
-}
-
-h5 {
-  position: fixed;
-}
-
-h2 {
-    font-size: 32px;
-}
-
-
-}
+/* Fin Estilos para pantallas pequeñas */

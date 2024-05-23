@@ -1,11 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Inicio Estilos del Cuerpo */
 body {
   font-family: Arial, sans-serif;
+  height: 100svh;
+  margin-top: 20px;
+  overflow-x: hidden;
   margin: 0;
   color: #d6bc75;
   background-color: #060606 !important;
 }
+
 h2 {
-  color: #c99383 !important;
+  color: #fff !important;
   text-align: center;
   font-family: "Gloock", serif;
   font-weight: 900;
@@ -82,11 +93,9 @@ h2 {
     flex-direction: column-reverse;
   }
 
-
   .fila {
     flex-direction: column;
   }
-
 
   h2 {
     font-size: 24px;
@@ -109,35 +118,36 @@ h2 {
     order: 2; /* Cambia el orden del texto para que esté abajo */
   }
 }
+h2 {
+  font-size: 28px;
+}
 
+h2 {
+  font-size: 32px;
+}
+
+/* Consultas de medios para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
   h2 {
     font-size: 28px;
   }
+}
 
+
+@media (min-width: 1024px) {
+  h5 {
+    position: fixed;
+  }
 
   h2 {
     font-size: 32px;
   }
-/* Inicio Estilos Generales */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
-/* Fin Estilos Generales */
 
-/* Inicio Estilos del Cuerpo */
-body {
-  font-family: sans-serif;
-  height: 100svh;
-  margin-top: 20px;
-  background-color: rgb(233, 216, 196);
-  overflow-x: hidden; 
-  
-}
-#parrafo_sn{
-color: black;
-font-size: x-large;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+#parrafo_sn {
+  color: black;
+  font-size: large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 1.5;
 }
