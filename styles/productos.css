@@ -89,7 +89,7 @@ nav ul {
   transition: background-color 0.5s, color 0.5s;
   border-radius: 15px;
   font-weight: bold;
-  justify-content:flex-end;
+  justify-content: flex-end;
 }
 
 .nav-header a:hover {
@@ -128,8 +128,8 @@ h2,
   font-weight: bold;
   text-align: center;
   margin-bottom: 10px;
-  
-  
+
+
 }
 
 .lista {
@@ -171,10 +171,10 @@ a {
   height: 100%;
   background-color: rgb(233, 216, 196);
   justify-content: space-around;
-  
+
   display: flex;
   flex-wrap: wrap;
-  
+
 
 }
 
@@ -226,7 +226,7 @@ a {
   margin: auto;
   display: block;
   background-color: #c99383;
-  border:#c99383 1px solid;
+  border: #c99383 1px solid;
 }
 
 .carrito {
@@ -234,7 +234,7 @@ a {
   height: 20px;
   margin: auto;
   display: block;
-  
+
 }
 
 .card-img-top {
@@ -262,19 +262,26 @@ a {
 /*carrito flotante*/
 
 #carrito-flotante {
-  position: sticky;
-  top: 20px;
+  position: fixed;
+  margin-right: auto;
+  margin-left: auto;
+
   right: 20px;
-  width: 300px;
+  width: auto;
   padding: 15px;
-  background-color: white;
-  border: 1px solid #ccc;
+  background-color: rgb(180, 134, 134);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+  z-index: 1;
+  border-radius: 15px;
+  text-align: center;
 }
 
-#carrito-flotante h2 {
+#carrito-flotante h4 {
   margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 30px;
 }
 
 #carrito-flotante ul {
@@ -293,7 +300,14 @@ a {
   background-color: rgba(194, 61, 21, 0.291);
   border: none;
   padding: 5px 10px;
-  cursor: pointer;
+
+
+}
+
+.total {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: auto;
 }
 
 #carrito-flotante.hidden {
@@ -301,18 +315,21 @@ a {
 }
 
 #toggle-carrito {
+  position: fixed;
   background-color: #000;
   color: #fff;
   border: none;
   padding: 10px 20px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-bottom: 10px;
+  font-size: 15px;
   border-radius: 15px;
-  
-  height: 50px;
-  margin: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  right: 20px;
+  width: auto;
+  z-index: 1000;
+  text-align: center;
 }
+
 /* Fin carrito flotante */
 
 /* Estilos para el mensaje emergente (toast) */
@@ -322,10 +339,12 @@ a {
   right: 20px;
   width: 300px;
   z-index: 1100;
+
+  justify-content: center;
 }
 
 .toast {
-  background-color: #333;
+  background-color: #333333;
   color: #fff;
   padding: 10px 20px;
   margin-top: 10px;
