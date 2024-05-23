@@ -4,42 +4,6 @@ body {
   color: #d6bc75;
   background-color: #060606 !important;
 }
-
-header {
-  background-color: #d6bc75;
-  color: white;
-  padding: 20px;
-  display: flex;
-  align-items: center; /* Alinea contenido a la derecha */
-}
-.logo img {
-  width: 150px; /*tamaño de logo*/
-  height: auto;
-  margin-right: 20px;
-}
-header h1 {
-  margin: 0;
-}
-
-nav {
-  margin-left: auto; /*mueve menu de navegacion a la derecha */
-}
-
-nav ul {
-  list-style-type: none; /*se establece ningun marcador*/
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: #e6d39f;
-  text-decoration: none;
-}
-
 h2 {
   color: #c99383 !important;
   text-align: center;
@@ -98,21 +62,6 @@ h2 {
   padding-bottom: 60px;
 }
 
-footer {
-  background-color: #d6bc75;
-  color: white;
-  text-align: center;
-  height: 70px; /* Altura del footer */
-  display: flex;
-  justify-content: center; /* Centra horizontal */
-  align-items: center; /* Centra vertivalmente */
-}
-
-footer p {
-  font-size: 20px; /* Ajusta tamaño de la letra */
-  margin: 0%;
-}
-
 /* Consultas de medios para dispositivos móviles */
 @media (max-width: 767px) {
   body {
@@ -133,21 +82,11 @@ footer p {
     flex-direction: column-reverse;
   }
 
-  .logo img {
-    width: 100px;
-  }
 
   .fila {
     flex-direction: column;
   }
 
-  header {
-    padding: 10px;
-  }
-
-  nav ul li {
-    margin-right: 10px;
-  }
 
   h2 {
     font-size: 24px;
@@ -171,40 +110,34 @@ footer p {
   }
 }
 
-/* Consultas de medios para tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .logo img {
-    width: 120px;
-  }
-
-  header {
-    padding: 15px;
-  }
-
-  nav ul li {
-    margin-right: 15px;
-  }
-
   h2 {
     font-size: 28px;
   }
-}
 
-/* Consultas de medios para laptops */
-@media (min-width: 1024px) {
-  .logo img {
-    width: 150px;
-  }
-
-  header {
-    padding: 20px;
-  }
-
-  nav ul li {
-    margin-right: 20px;
-  }
 
   h2 {
     font-size: 32px;
   }
+/* Inicio Estilos Generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Fin Estilos Generales */
+
+/* Inicio Estilos del Cuerpo */
+body {
+  font-family: sans-serif;
+  height: 100svh;
+  margin-top: 20px;
+  background-color: rgb(233, 216, 196);
+  overflow-x: hidden; 
+  
+}
+#parrafo_sn{
+color: black;
+font-size: x-large;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }

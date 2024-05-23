@@ -1,223 +1,177 @@
-/* Inicio Estilos Generales */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  /* Fin Estilos Generales */
-  
-  /* Inicio Estilos del Cuerpo */
-  body {
-    font-family: sans-serif;
-    height: 100vh;
-    margin-top: 20px;
-    background-color: rgb(233, 216, 196);
-  }
-  /* Fin Estilos del Cuerpo */
-  
-  /* Inicio Header */
-  header {
-    text-align: center;
-    background-color: rgb(17, 17, 17);
-    color: white;
-    font-size: 1.25rem;
-    display: flex;
-    flex-direction: column;
-  }
-  /* Fin Header */
-  
-  /* Inicio Título Header */
-  header h5 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgb(252, 0, 0);
-    color: white;
-    text-align: center;
-    padding: 0.01% 0;
-    margin: 0;
-    z-index: 999;
-  }
-  /* Fin Título Header */
-  
-  /* Inicio Sección Header */
-  header section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  /* Fin Sección Header */
-  
-  /* Inicio Logo */
-  .logo {
-    width: 450px;
-  }
-  /* Fin Logo */
-  
-  /* Inicio Navegación */
-  nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    margin-right: 50%;
-  }
-  /* Fin Navegación */
-  
-  /* Inicio Enlaces de Navegación */
-  .nav-header a {
-    background-color: rgba(238, 183, 166, 0.291);
-    color: #bcb8b8;
-    margin: 0 5px;
-    cursor: pointer;
-    text-decoration: none;
-    padding: 15px 25px;
-    transition: background-color 0.5s, color 0.5s;
-    border-radius: 15px;
-    font-weight: bold;
-  }
-  .nav-header a:hover {
-    background-color: rgb(250, 5, 5);
-    color: #ffffff;
-  }
-  /* Fin Enlaces de Navegación */
-  
-  /* Inicio Estilos de Texto */
-  h2,
-  .nuestros_productos_titulo {
-    color: #ffffff;
-    text-shadow: 2px 2px 4px #0c0c0c;
-    text-transform: uppercase;
-    padding: 2px 0px;
-    background-image: url("../assets/index/Carrousel/banner.jpg");
-    font-size: 24px;
-    font-family: Arial, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  /* Fin Estilos de Texto */
-  
-  /* Inicio Nuestros Productos */
-  .nuestros_productos_titulo {
-    margin-top: 30px;
-  }
-  
-  .nuestros_productos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-    justify-items: center;
-  }
-  
-  .card {
-    width: 400px;
-    height: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    background-color: rgba(216, 198, 175, 0.494);
-    display: flex;
-    flex-direction: column;
-    border-radius: 15px;
-    transition: transform 0.3s ease;
-  }
-  
-  .card img {
-    width: 50%;
-    aspect-ratio: 1;
-    margin: 5% auto;
-    border-radius: 50%;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.978);
-  }
-  
-  .card p {
-    text-align: center;
-    padding: 10px;
-    background-color: rgb(255, 0, 0);
-    font-weight: bold;
-    font-size: 25px;
-    color: white;
-    border-radius: 10px;
-  }
-  
-  .card:hover {
-    transform: scale(1.1);
-  }
-  /* Fin Nuestros Productos */
-  
-  /* Inicio Pie de página */
-  footer {
-    background-image: url("../assets/index/Carrousel/banner.jpg");
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 20px;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    text-shadow: 4px 2px 15px #000000;
-    height: 15px;
-  }
-  /* Fin Pie de página */
-  
-  /* Inicio Estilos para pantallas pequeñas */
-  @media screen and (max-width: 768px) {
-    header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .logo {
-      width: 200px;
-      margin-bottom: 60px;
-      margin-top: 70px;
-      text-align: left;
-    }
-  
-    nav {
-      text-align: center;
-    }
-  
-    nav ul {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-    }
-  
-    .nav-header a {
-      display: inline-block;
-      padding: 5px 5px;
-      font-size: 0.4rem;
-    }
-  
-    .nuestros_productos {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-  
-    header h5 {
-      font-size: 0.9rem;
-      margin-top: 0;
-    }
-  }
-  /* Fin Estilos para pantallas pequeñas */
-  /* Estilos para el carrito */
-.carrito-container {
-  margin-top: 20px;
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #d6bc75;
+  background-color: #060606 !important;
+}
+
+h2 {
+  color: #fff !important;
+  text-align: center;
+  font-family: "Gloock", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+    
+.main-content {
+  flex-grow: 1; /* Hace que el contenido ppal.crezca para ocupar todo el espacio */
+  padding: 20px 0px 0px 0px;
+}
+
+.fila {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  background-color: #e6d39f;
+}
+
+.columna {
+  width: 50%;
+}
+
+.columnaImagen {
+  width: 50%;
+  display: flex;
   justify-content: center;
 }
 
-.carrito-item {
-  background-color: rgba(232, 223, 223, 0.5);
-  color: rgb(8, 0, 78);
-  padding: 10px;
-  margin: 5px;
-  border-radius: 5px;
+.columna p {
+  text-align: justify;
+}
+
+.imagen {
+  width: 75%;
+}
+
+.pb-12 {
+  padding-bottom: 12px;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+
+.pr-60 {
+  padding-right: 60px;
+}
+
+.pl-60 {
+  padding-left: 60px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+
+footer {
+  background-color: #d6bc75;
+  color:white;
+  text-align: center;
+  height: 70px; /* Altura del footer */
+  display: flex;
+  justify-content: center; /* Centra horizontal */
+  align-items: center; /* Centra vertivalmente */
+}
+
+footer p {
+  font-size: 20px; /* Ajusta tamaño de la letra */
+  margin: 0%;
+} 
+
+/* Consultas de medios para dispositivos móviles */
+@media (max-width: 767px) {
+body {
+    padding: 10px;
+}
+.pr-60 {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.pl-60 {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.fila.pb-60 {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.logo {
+    width: 100px;
+}
+
+.fila {
+  flex-direction: column ;
+}
+
+header {
+    padding: 10px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.columna,
+.columnaImagen {
+    width: 100%;
+}
+
+.imagen {
+    width: 100%;
+}
+
+.columnaImagen {
+  order: 1; /* Cambia el orden de la imagen para que esté arriba */
+}
+
+.columna {
+  order: 2; /* Cambia el orden del texto para que esté abajo */
+}
+footer p {
+  font-size: 9px;
+}
+}
+
+/* Consultas de medios para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+.logo img {
+    width: 120px;
+}
+
+header {
+    padding: 15px;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+h2 {
+    font-size: 28px;
+}
+}
+
+/* Consultas de medios para laptops */
+@media (min-width: 1024px) {
+.logo  {
+    width: 125px;
+}
+
+header {
+    padding: 20px;
+}
+
+h5 {
+  position: fixed;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+
 }
